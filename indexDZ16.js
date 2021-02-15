@@ -101,7 +101,7 @@ function renderAction(action) {
 
 function getTableRow(action) {
     return`
-        <li data-id="${action.id}" class ="js-action">${action.title}; ${action.completed}<i class="far fa-trash-alt action js-action-delete"></i></li>
+        <li data-id="${action.id}" class ="js-action">${action.title}<i class="far fa-trash-alt action js-action-delete"></i></li>
     `;
 }
 
