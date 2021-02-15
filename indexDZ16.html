@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <title>Document</title>
+    <style>
+        .js-form{
+            width: 100%;
+        }
+        .js-input{
+            max-width: 80%;
+            display: inline;
+        }
+        .js-button{
+            max-width: 20%;
+        }
+        .js-action{
+            background-color: rgba(255, 0, 0, 0.582);
+            color: black;
+            cursor: pointer;
+        }
+        .js-action-delete{
+            cursor: pointer;
+            font-size: 15px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1> My list to do : </h1>
+    <div  class="input-group mb-3">
+        <form name="action" class="js-form">
+            <input name = "title" type="text" class="form-control js-input" placeholder="What do I need to do" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <button type="button" class="btn btn-primary btn-lg js-button">Add action</button> 
+        </form>
+    </div>
+    <div class="alert alert-primary" role="alert">
+        <ul class="js-my-List-Todo" id="">
+            <h3 class="js-text" id=""> List Todo is empty </h3>
+        </ul>     
+    </div>
+    <script src="./indexDZ16.js"></script>
+</body>
+</html>
